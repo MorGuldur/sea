@@ -78,6 +78,17 @@
 }
 
 @media (max-width: 800px) {
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	p {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
 	section {
 		padding: 30px 50px;
 	}
@@ -114,19 +125,30 @@
 }
 
 @media (max-width: 767px) {
+	header {
+		padding: 10px 24px;
+	}
 	.header__nav {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		position: absolute;
-		top: 53px;
-		right: -30px;
-		font-size: 18px;
+		font-size: 17px;
 		line-height: 30px;
-		background-color: rgba(81, 158, 170, 1);
+		top: 53px;
+		right: -25px;
+		background-color: rgba(81, 158, 170, 0.9);
 	}
-	.header__nav li{
+	.header__nav li {
 		display: none;
-		padding: 2px 15px;
-	}
+		width: 100vw;
+		flex: 1;
+		text-align: center;
+}
+	.header__nav li a {
+		margin: 0 auto;
+}
 	.header__nav span{
 		display: none;
 	}
@@ -154,14 +176,14 @@
 
 @media (max-width: 600px) {
 	h2 {
-		font-size: 35px;
+		font-size: 25px;
 	}
 	h3 {
-		font-size: 35px;
-	}
-	p {
 		font-size: 25px;
-		line-height: 40px;
+	}
+
+	header {
+		padding: 10px 25px;
 	}
 
 	.banner__slide__text{
@@ -192,6 +214,14 @@
 }
 
 @media (max-width: 533px) {
+	header {
+		padding: 10px 25px;
+	}
+
+	.banner__slide__text {
+		padding: 0 25px 30px;
+}
+
 	.site-body p {
 		padding: 60px 0 30px;
 	}
@@ -230,14 +260,9 @@
 }
 
 @media (max-width: 360px) {
-	h2 {
-		font-size: 35px;
-		line-height: 40px;
-	}
-
 	p {
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 18px;
+		line-height: 25px;
 	}
 	section {
 		padding: 20px 30px;
@@ -247,15 +272,9 @@
 		padding: 10px 27px;
 	}
 	.header__nav {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		font-size: 17px;
-		line-height: 30px;
-		top: 49px;
+		top: 53px;
 		right: -27px;
-		background-color: rgba(81, 158, 170, 0.9);
+
 	}
 	.header__nav li {
 		width: 100vw;
@@ -324,12 +343,10 @@
 
 @media (max-width: 240px) {
 	h2 {
-		font-size: 30px;
-		line-height: 35px;
+		line-height: 22px;
 	}
 	h3 {
-		font-size: 20px;
-		padding: 0 0 0 2px;
+		padding: 0 0 0 0px;
 	}
 	p {
 		font-size: 22px;
@@ -340,9 +357,9 @@
 		padding: 12px 8px;
 	}
 
-header {
-	display: block;
-}
+	.header__logo {
+		font-size: 27px;
+	}
 	.header__nav {
 		font-size: 20px;
 		line-height: 30px;
