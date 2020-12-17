@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<title>Black sea - Main page</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="header__logo">
+				<a href="http://127.0.0.1:5500/index.html">Black Sea</a>
+			</div>
+			<div class="header__menu">
+				<label class="menu__phone" for="menu__check">Menu</label>
+				<input id="menu__check" type="checkbox">
+				<ul class="header__nav">
+					<li><a href="#">Home</a><span>/</span></li>
+					<li><a href="#">About me</a><span>/</span></li>
+					<li><a href="#">Portfolio</a><span>/</span></li>
+					<li><a href="#">Contact me</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<section class="banner">
+			<input type="radio" name="slider-group" id="slide1" checked />
+			<div class="banner__slide">
+				<h1 class="banner__slide__text">Lorem ipsum dolor sit amet.</h1>
+				<a class="banner__slide__button" href="#">Go to</a>
+			</div>
+			<input type="radio" name="slider-group" id="slide2" />
+			<div class="banner__slide">
+				<h1 class="banner__slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aut.</h1>
+				<a class="banner__slide__button" href="#">Link</a>
+			</div>
+			<input type="radio" checked name="slider-group" id="slide3" />
+			<div class="banner__slide">
+				<h1 class="banner__slide__text">We need the tonic of wildness</h1>
+				<a class="banner__slide__button" href="#">Read more</a>
+			</div>
+			<input type="radio" name="slider-group" id="slide4" />
+			<div class="banner__slide">
+				<h1 class="banner__slide__text">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+				<a class="banner__slide__button" href="#">About</a>
+			</div>
+			<input type="radio" name="slider-group" id="slide5" />
+			<div class="banner__slide">
+				<h1 class="banner__slide__text">Lorem ipsum dolor sit amet consectetur.</h1>
+				<a class="banner__slide__button" href="#">Address</a>
+			</div>
+			<div class="slider__control">
+				<label id="l1" for="slide1"></label>
+				<label id="l2" for="slide2"></label>
+				<label id="l3" for="slide3"></label>
+				<label id="l4" for="slide4"></label>
+				<label id="l5" for="slide5"></label>
+			</div>
+		</section>
+
+		<section class="site-body">
+			<h2>At the same time that we are earnest to explore
+				& learn all things</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to make a type specimen book. </p>
+			<div class="site-body__nav">
+				<a class="site-body__nav__icon" href="#"><img src="/img/icons/corzina.png" alt="#"></a>
+				<a class="site-body__nav__icon" href="#"><img src="/img/icons/globus.png" alt="#"></a>
+				<a class="site-body__nav__icon" href="#"><img src="/img/icons/portfel.png" alt="#"></a>
+			</div>
+		</section>
+ 
+		<section class="bio">
+			<div class="bio__foto">
+				<img src="/img/biofoto.png" alt="#">
+				<div class="bio__foto__name">
+					<h3>dhavan</h3>
+					<span>&#8221;</span>
+				</div>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to
+				a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+			</p>
+		</section>
+
+		<section class="feedback" id="map">
+			<form class="feedback__round" action="#" method="POST" enctype="multipart/form-data">
+				<input type="text" name="username" placeholder="Name">
+				<input type="text" name="usermail" placeholder="Email adress">
+				<textarea name="message" cols="22" rows="5" placeholder="Message"></textarea>
+				<button type="submit">
+					<img src="/img/icons/submit.png" alt="#">
+				</button>
+			</form>
+		</section>
+
+		<footer>
+			<p>Copyright © 2012 Css Author.com</p>
+		</footer>
+	</div>
+
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+	<script type="text/javascript">
+		var myMap;
+		ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+		function init() {
+			myMap = new ymaps.Map("map", {
+				center: [55.76, 37.64],
+				zoom: 12
+			});
+		}
+	</script>
+
+</body>
+
+</html>
